@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học về câu điều kiện và vòng lặp trong js </title>
+</head>
+<body>
+    <script>
+        // câu lệnh if, else rút gọn--> 	var result = condition ? value1 : value2
+        var a = 99;
+        var result = a >= 18 ? "Bạn đủ tuổi uống bia": "bạn chưa đủ tuổi  đủ tuổi";
+        console.log(result);
+
+        //câu lệnh switch Case 
+        // có thể gộp case lại với nhau
+        var b = 1;
+        switch (b) {
+            case 1:
+                
+            case 2:
+               
+            case 3:
+                console.log("giá trị của b nhỏ hơn hoặc bằng 3")
+                break;
+            case 4:
+                console.log("giá trị của b là 4")
+                break;
+            case 5:
+                console.log("giá trị của b là 5")
+                break;
+            default:
+                console.log("giá trị b không xác định")
+                break;
+        }
+
+        //vòng lặp for
+        // for(var i = 0; i<10 ; i+=3){
+        //     console.log(i);    
+        // }
+        for(var i = 9; i >=1 ; i--){
+            console.log(i);
+            
+        }
+
+        // vòng lặp for In, for(key in obj)
+        // dùng để LẤY RA KEY của một obj, array,string
+        // key muốn đặt là gì cũng, mỗi key tương ứng với key ở trong obj
+        var sinhVien = {
+            fullName: "Hồ Thanh Hải", // KEY: VALUE
+            age: 20, 
+            email: "hothanhai@gmail.com"
+        };
+        for(a in sinhVien){
+            console.log(a, sinhVien[a]);
+        }
+
+        //VÒNG LẶP  for of dùng để lấy ra  PHẦN TỬ (CẢ KEY VÀ VALUE)  của một array, string (không áp dụng được với object).
+        //Cú pháp:
+        //for (variable of iterable) {}
+
+
+
+        //VÒNG LẶP WHILE: Vòng lặp while luôn luôn kiểm tra điều kiện trước, nếu điều kiện thỏa mãn thì mới chạy vào trong vòng lặp.
+
+        //VÒNG LẶP DO WHILE: chạy vào do trước tiên rồi mới tình tiếp
+
+        //Lệnh break có tác dụng dừng vòng lặp cho dù điều kiện của vòng lặp vẫn đang đúng.
+
+        //Lệnh continue có tác dụng bỏ qua một bước lặp nào đó. nếu gặp continue thì các đoạn code bên dưới không
+        // được thực thi mà nhảy sang vòng lặp mới luôn 
+
+
+        //BIẾN:  là nơi giúp lưu trữ thông tin 
+
+        //khai báo biến bằng var và let: var dùng trong mọi nơi còn let chỉ dùng trong phạm vi nhất định(một vòng lặp, khối khai báo )
+
+        //const là một hằng số, vì vậy khi khai báo biến const thì bạn phải gán giá trị cho nó luôn, 
+        // sau này cũng không thể thay đổi giá trị cho biến.
+
+        //WOWJS: Thêm hiệu ứng đưa vào khi scroll đến element, đọc dox và làm lại. bao gồm đưa vào như thế nào, delay bao nhiêu (Advanced Options).....
+
+        //SLICKS: thư viện để làm slide, nhúng file cnd vào để làm việc
+
+    </script>
+</body>
+</html>

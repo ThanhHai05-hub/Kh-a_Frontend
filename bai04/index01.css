@@ -1,0 +1,14 @@
+b{
+    color: aquamarine;
+}
+/* p{
+ background-image: url(68126514_p0.jpg);
+ width: 900px;
+} */
+ div{
+    background-image: url(68126514_p0.jpg);
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+    box-sizing: border-box;
+}

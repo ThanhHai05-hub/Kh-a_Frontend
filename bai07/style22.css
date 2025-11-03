@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #90DCC6;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-one {
+    display: flex;
+}
+
+.content {
+    background-color: #CAEFF2;
+    padding: 20px;
+    height: 500px;
+    width: 70%;
+
+
+}
+
+.aside {
+    background-color: #F2D8CA;
+    padding: 20px;
+    height: 500px;
+    width: 30%;
+
+
+
+
+}
+
+
+
+.section-two {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.box {
+    background-color: #F2F1CA;
+    padding: 20px;
+    height: 150px;
+    text-align: center;
+    width: 24.5%;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.footer {
+    background-color: #EDCAF2;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
+@media screen and (max-width : 768px) {
+    .section-one {
+        flex-wrap: wrap;
+    }
+
+    .content {
+
+        width: 100%;
+    }
+
+    .aside {
+
+
+        width: 100%;
+
+    }
+
+    .section-two {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 99%;
+    }
+    /* vẫn kế thừa flex-wrap: ở trên;  */
+
+   
+}

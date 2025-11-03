@@ -1,0 +1,46 @@
+.section-one {
+    background-color: #F9FCF9;
+    padding: 60px 0;
+}
+.section-one a{
+    text-decoration: none;
+    color: black;
+}
+.section-one .inner-box i{
+   color: #5CB874;
+   font-size: 30px;
+   margin: 15px 0;
+}
+.section-one .inner-box .inner-title{
+   font-size: 20px;
+}
+.section-one .inner-box .inner-desc{
+   font-size: 15px;
+}
+
+
+/* end section-one  */
+.section-two{
+    margin: 50px 0;
+}
+.section-two .inner-head{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-two .inner-img img{
+    width: 100%;
+    height: auto;
+}
+.section-two #gs{
+    align-items:center ;
+}
+
+@media (max-width: 991.98px) {
+  /* Code… */
+  .section-two .inner-img img{
+    margin-bottom: 50px;
+  }
+}
+
+/*  section-two  */
+

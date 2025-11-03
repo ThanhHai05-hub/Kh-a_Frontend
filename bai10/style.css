@@ -1,0 +1,193 @@
+* {
+    font-family: segoe ui;
+    box-sizing: border-box;
+}
+
+.section-one {
+    background-color: #FFB446;
+    padding: 50px 0;
+}
+
+.section-one .head {
+    text-align: center;
+    background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+    color: #fff;
+    padding: 8px 0;
+}
+
+.section-one form {
+    background-color: #fff;
+    padding: 20px 20px;
+
+}
+
+.section-one .box-contact {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section-one .bt {
+    text-align: center;
+
+}
+
+.button {
+    padding: 10px 30px;
+    background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+    border-radius: 40px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+
+
+}
+
+.button:after {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    content: "";
+    transform: translateX(-50%);
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.1;
+    z-index: 0;
+
+}
+
+.button:hover:after {
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+/* secton-two */
+
+
+.secton-two .modal-header {
+    flex-direction: column;
+}
+.secton-two .button {
+    margin-bottom: 20px;
+}
+.secton-two .modal-header .b{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.secton-two .modal-header #bont {
+    background-color: #fff;
+    border: none;
+    z-index: 1;
+    
+
+}
+
+.secton-two .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+   
+    z-index: 0;
+}
+
+.secton-two .modal-header img {
+    margin-bottom: 10px;
+    width: 50%;
+
+}
+
+.secton-two .modal-body {
+    padding: 0;
+
+}
+
+.secton-two .modal-body #bto {
+    width: 100%;
+
+}
+
+/* End secton-two */
+
+/* section three  */
+
+.section-three .header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.section-three .container img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+
+}
+.section-three .container .col-3{
+    
+    overflow: hidden;
+    
+}
+.section-three .container .col-3 .box{
+    
+   border: gray solid 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+@media (min-width: 1200px) {
+    .col-3{
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+.section-three .container a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    max-width: 200px;
+    display: block;
+}
+
+.section-three .container .inner-icon .fa-regular{
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+    
+}
+.section-three .container .price .price-old{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+.section-three .container .price .price-new{
+    color: #55ACEE;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+    
+}
+
+    
+/* End section three  */

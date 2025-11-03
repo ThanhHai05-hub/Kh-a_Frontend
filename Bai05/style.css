@@ -1,0 +1,62 @@
+.img{
+    background-image: url(5481305_2844240.jpg);
+    width: 600px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.Box-1{
+    background-color: burlywood;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.Box-2{
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.Box-4{
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    /* luôn luôn cố định với trình duyệt */
+    left: 0px;
+    top: 0px;
+}
+.Box-5{
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    
+    left: 0px;
+    top: 0px;
+}
+.box-6{
+    background-color: darksalmon;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+}
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: brown;
+}

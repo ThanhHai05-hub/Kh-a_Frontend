@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function sum(a,b){
+        //     console.log(a+b);
+        // }
+        // sum(5,9);
+
+
+        // var sinhVien= {
+        //     name: "Hồ Thanh Hải",
+        //     age: 20,
+        //     weight: 65,
+        //     sum: function(a,b){
+        //         alert(a+b);
+        //     }
+        // }
+        // console.log(sinhVien.age);
+        // console.log(sinhVien.weight);
+        // sinhVien.sum(30, 60);
+
+        // hàm được cài đặt sẵn trong js
+        // alert("Hello Hồ Thanh Hải đã đến với trang web của chúng tôi")
+        // hàm alert chỉ hiển thị thông báo ra màn hình 
+        // hàm confirm() hiển thị ra thông báo, có kết quả true và false
+        var result = confirm("Bạn đã đủ 18 tuổi chưa");
+        if (result == true) {
+            console.log("khách hàng đã đủ tuổi");
+        } else {
+            console.log("khách hàng chưa đủ tuổi");
+
+        }
+
+        // prompt() dùng để lấy thông tin từ người dùng
+        // Gồm có hai tham số truyền vào là nội dung thông báo và giá trị ban đầu.
+        // Cú pháp: prompt(title, defaultValue): 
+        var result2 = prompt("Vui lòng nhập tên của bạn", "Lê Văn A")
+        console.log(result2);
+
+
+        // console.log(): in ra thông báo
+        //console.warn(): in ra cảnh báo
+        // console.error(): in ra lỗi
+
+        //hàm setTimeout() truyền vào hàm a và khoảng thời gian b. sau khoảng thời gian b thì thực hiện hàm a. 
+        // và chỉ chạy 1 lần
+        setTimeout(function(){
+            console.log("Bạn đã chờ trong vòng 2s")
+        }, 2000)
+
+        // hàm setInterval() tương tự như hàm setTimeout nhung chạy nhiều lần sau khoảng thời gian b
+        //  setInterval(function(){
+        //     console.log("Bạn đã chờ trong vòng 2s")
+        // }, 2000)
+
+        //toán tử typeof để đưa ra kiểu dữ liệu của một 
+        
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Đối tượng arguments: chỉ dùng được ở trong hàm. 
+        // Giả sử khi gọi hàm và truyền đối số vào thì tất các các đối số đó sẽ được nằm trong arguments dưới dạng một mảng.
+
+        function tinhTong() { // đây là hàm có tính hoisting (tức là gọi được hàm trước lúc khai báo hàm đó).
+
+            let tong = 0;
+            for (item of arguments) {
+                tong += item;
+            }
+            return tong;
+
+        }
+        console.log(tinhTong(10, 20, 30, 40));
+
+        // biến var chỉ được sử dụng bên trong hàm 
+
+        // HÀM KHÔNG CÓ TÌNH HOISTING: gọi trước khi khai báo sẽ bị lỗi 
+        //+ HÀM BIỂU THỨC 
+        console.log(tinhTong1(10, 20, 30, 40));
+        var tinhTong1 = function () { // đây là hàm không có tình hoisting
+
+            let tong = 0;
+            for (item of arguments) {
+                tong += item;
+            }
+            return tong;
+
+        }
+        // HÀM MŨI TÊN: (Arrow Function) sẽ không có Arguments. Để  lấy các đối số đã truyền dưới dạng một mảng thì chúng ta sẽ sử dụng cú pháp spread.
+
+
+
+
+
+    </script>
+
+
+    <script>
+        // HÀM MŨI TÊN: (Arrow Function) sẽ không có Arguments. Để  lấy các đối số đã truyền dưới dạng một mảng thì chúng ta sẽ sử dụng cú pháp spread.
+
+        var sum1 = (...agurs) => {
+            let result = 0;
+            for (item of agurs) {
+                result += item;
+            }
+            return result;
+        }
+        console.log(sum1(4, 5, 7, 5, 4, 3, 88));
+    </script>
+
+    <script>
+        //ví dụ 1
+        //Tính tổng các số chẵn của mảng. Mảng như sau:
+        var mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        function tinhTongSoChan(arr) {
+            let tong = 0;
+            for (const item of arr) {
+                if (item % 2 == 0) {
+                    tong += item;
+                }
+            }
+            return tong;
+        }
+        const result = tinhTongSoChan(mang);
+        console.log(result);
+
+        // ví dụ 2
+        //:Viết chương trình cho người dùng nhập vào số n lớn hơn 0, sau đó dựa vào n tính giá trị của biểu thức:
+        //bieuThuc = 1/n + 2/n + 3/n + ... + n/n.
+
+        //prompt: hiện thị thông báo nhập từ bàn phím gì đó
+        //do { // chạy vào do ít nhất 1 lần trước khi kiểm tra điều kiện
+        // Các lệnh cần thực thi
+        //} while (điều_kiện);
+
+
+        function tinhGiaTriBieuThuc(n) {
+            let tong1 = 0;
+            for (let i = 1; i <= n; i++) {
+                tong1 = tong1 += i / n
+            }
+            console.log(tong1);
+
+        }
+        do {
+            var n = prompt("Vui lòng nhập n:");
+            n = parseInt(n);
+            console.log(n);
+            if (n <= 0) {
+                console.log("Vui lòng nhập lại n nguyên dương");
+
+            } else {
+                tinhGiaTriBieuThuc(n);
+            }
+        } while (n <= 0);
+
+
+        //khối lệnh try catch và finally
+        // ta sử dụng khi không muốn chương trình bị dừng khi người dùng nhập sai dữ liệu/.....
+        // chạy vào try trước nếu try bị lỗi thì chạy vào catch  
+        // dù chương trình có lỗi hay không thì vẫn chạy vào finally(cuối cùng)
+
+
+        // một chút về cách làm việc với obj
+        //có 2 cách để thêm vào 1 phần tử của một obj 
+        var inforUser = {
+            fullName: "Hồ Thanh Hải",
+            email:"hothanhhai88@gmail.com"
+        }
+        inforUser.phone = "09459945045";
+        inforUser["age"] = 43;
+        console.log(inforUser);
+        console.log(inforUser.age);
+        
+    </script>
+</body>
+
+</html>

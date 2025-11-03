@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với mảng nâng cao</title>
+</head>
+
+<body>
+    <Script>
+        //forEach()
+        //Để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó.
+        //Có thể thay đổi trực tiếp mảng ban đầu
+        //Cú pháp:
+        //arr.forEach(function(currentValue, index, array) { // phần tử, chỉ số, mảng hiện tại 
+        // code xử lý
+        //});
+        let number = [34, 33, 22, 11, 14, 54, 90, 90];
+        let tong = 0;
+        number.forEach(function (item, index, array) {
+            tong += item;
+            number[index] = 20;
+            // không có return 
+
+        });
+        console.log(tong);
+        console.log(number);
+        console.log(number);
+
+
+        // hàm every(): đối số đưa vào giống như hàm forEach
+        // duyệt qua tất cả các phần tử phải thỏa mãn một điều kiện nào đó thì trả ra true
+
+
+
+        //hàm some() : đối số đưa vào giống như hàm forEach
+        // duyệt tất cả phần tử nếu 1 phần tử thỏa điều kiện thì trả ra true
+
+        // hàm find(): đối số đưa vào giống như hàm forEach
+        // kiểm tra trong mảng có phần tử giống với phần tử cần tìm không
+        // nếu có thì trả ra phần tử đó không thì undefined
+        // chỉ tìm một phần tử đầu tiên tìm được
+
+        // hàm filter():đối số đưa vào giống như hàm forEach
+        // kiểm tra trong mảng có phần tử giống với phần tử cần tìm không
+        // nếu có thì trả ra tất cả phần tử giống
+        // có thể tìm được nhiều phần tử
+
+        // hàm map() đối số đưa vào giống như hàm forEach
+        // duyệt từng phần tử, giá trị trả về là một mảng mới với số lượng phần tử bằng với số lượng phần tử
+        // của mảng ban đầu và có thể thay đổi giá trị của phần tử thông qua return
+
+
+        // hàm reduce() Hàm reduce() sẽ duyệt qua từng phần tử trong mảng và tính toán các phần tử đó, sau đó trả về một giá trị cuối cùng.
+        //arr.reduce(function(total, currentValue, currentIndex, array) {
+        // code xử lý
+        //}, initialValue);
+        //Trong đó:
+        //total: giá trị trả lại trước đó của function, chính là giá trị của lệnh return cho mỗi lần lặp.( giá trị đầu tiên của obj )
+        //initialValue: tham số không bắt buộc. 
+        // Nếu được truyền vào thì initialValue sẽ được sử dụng làm giá trị ban đầu, còn không thì nó sẽ lấy giá trị của phần tử đầu tiên.
+
+    </Script>
+</body>
+
+</html>
