@@ -6,12 +6,41 @@
     <title>Bài 18 nè</title>
 </head>
 <body>
+    <button onclick="chuyenTab()">Chuyển sang trang 28 teach</button>
+    <button onclick="dongTab()">Đóng tab</button>
     <script>
         console.log(window)
         console.log(innerHeight)
         console.log(innerWidth)
         // lấy ra chiều cao và chiều rộng của trang web hiện tại 
+        let tab;
+        function chuyenTab(){
+            tab = window.open("file:///C:/Users/Administrator/Downloads/Khoa_frontEnd/bai18/28_teach.html","_blank", "width=1200 ,height=500, top=200, left=200")
+        }
+        //window.open("url", "name", "options"). đường dẫn đến trang web, tên muốn đặt (mặc định là _blank)
+        //options: là một chuỗi các thông số được cách nhau bởi dấu phẩy, sau đây là các thông số thông dụng.
+        //height: chiều cao của cửa sổ. Đơn vị pixels.
+        //width: chiều rộng của cửa sổ. Đơn vị pixels.
+        //top: vị trí hiển thị cửa sổ so với lề trên. Đơn vị pixels.
+        //left: vị trí hiển thị cửa sổ so với lề trái. Đơn vị pixels.
 
+        function dongTab(){
+            tab.close();
+        }
+        // đóng tab đang mở 
+
+
+        //Để lấy đường dẫn hiện tại của trang web.
+        //Cú pháp:
+	    //window.location.href;
+        console.log(window.location);
+        console.log(window.location.href);
+
+        // screen.width và screen.height
+        // lấy chiều rộng và chiều cao của màn hình máy tính
+        console.log(window.screen.width);
+        
+        
     </script>
 </body>
 </html>
